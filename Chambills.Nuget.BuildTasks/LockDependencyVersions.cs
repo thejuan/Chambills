@@ -50,7 +50,7 @@ namespace Chambills.NuGet.BuildTasks
         {
             foreach (ManifestDependencySet manifestDependencySet in package.DependencySets)
             {
-                foreach (ManifestDependency manifestDependency in manifestDependencySet.Dependencies)
+                foreach (ManifestDependency manifestDependency in manifestDependencySet.Dependencies.Where(d => !string.IsNullOrEmpty(d.Version)))
                 {
                     var versionSpec = (VersionSpec) VersionUtility.ParseVersionSpec(manifestDependency.Version);
                     versionSpec.MaxVersion = versionSpec.MinVersion;
