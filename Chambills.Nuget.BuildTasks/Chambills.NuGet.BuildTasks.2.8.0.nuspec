@@ -4,6 +4,7 @@
         <id>Chambills.NuGet.BuildTasks</id>
         <version>2.8.0</version>
         <authors>adamm</authors>
+        <projectUrl>https://github.com/thejuan/Chambills/tree/master/Chambills.Nuget.BuildTasks</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A collection of MsBuild Tasks for use with Automating NuGet. Currently only LockDependencyVersions</description>
         <dependencies>
