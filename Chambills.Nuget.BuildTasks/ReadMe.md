@@ -5,6 +5,7 @@ A collection of tasks for dealing with Nuget.
 
 Example Target for locking all versions in a nuget package.
 
+```XML
   <Target Name="LockDependencyVersion">
 
     <PropertyGroup>
@@ -25,3 +26,4 @@ Example Target for locking all versions in a nuget package.
 
     <RemoveDir Directories="$(TempOutputDir)" />
   </Target>
+  ```
